@@ -1,0 +1,10 @@
+'''
+Given an unsigned 8-bit integer, swap its even and odd bits. The 1st and 2nd bit should be swapped,
+the 3rd and 4th bit should be swapped, and so on.
+For example, 10101010 should be 01010101. 11100010 should be 11010001.
+Bonus: Can you do this in one line?
+'''
+line = input('Enter an unsigned 8-bit integer \n')
+print('you\'ve entered :{0}'.format(line))
+print('Length of Input is :{0}'.format(len(line)))
+print(''.join([ line[x:x+2][::-1] for x in range(0, len(line), 2) ]))
