@@ -1,0 +1,12 @@
+'''
+Given a string of words delimited by spaces, reverse the words in string.
+For example, given "hello world here", return "here world hello"
+Follow-up: given a mutable string representation, can you perform this operation in-place?
+'''
+
+line = input("Enter a line:\n")
+print('You\'ve entered {0}'.format(line))
+line = line.split()
+line = line [::-1]
+output = ' '.join(map(str,line))
+print('Reversed Output as :{}'.format(output))
